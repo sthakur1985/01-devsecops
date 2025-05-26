@@ -9,3 +9,4 @@ resource "aws_vpc" "http-vpc" {
   tags                  = {
     name = "http-vpc"
   }
+}
