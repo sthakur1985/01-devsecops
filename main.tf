@@ -1,5 +1,7 @@
 provider "aws" {
   region = "{{ vars.AWS_REGION }}"
+  aws_access_key = "{{ vars.AWS_ACCESS_KEY_ID }}"
+  aws_secret_key = "{{ vars.AWS_SECRET_ACCESS_KEY }}"
 }
 
 resource "aws_vpc" "http-vpc" {
