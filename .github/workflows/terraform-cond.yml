@@ -78,7 +78,7 @@ jobs:
 
       - name: Terraform import
         id: import
-        run: terraform import aws_vpc vpc-0225e0572c00975de
+        run: terraform import aws_vpc.http-vpc vpc-0225e0572c00975de
       
       - name: Terraform Destroy
         id: destroy
