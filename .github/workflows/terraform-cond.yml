@@ -75,6 +75,10 @@ jobs:
             AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
             AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
             AWS_DEFAULT_REGION: us-east-1
+
+      - name: Terraform import
+        id: import
+        run: terraform import aws_vpc vpc-04dea96247c6a9b79
       
       - name: Terraform Destroy
         id: destroy
